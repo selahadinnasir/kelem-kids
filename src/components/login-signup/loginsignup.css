@@ -1,0 +1,119 @@
+/* loginsignup.css */
+
+.login-signup-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #3498db;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.3);
+    background-color: #fff;
+}
+
+.login-signup-container h2 {
+    text-align: center;
+    color: #3498db;
+}
+
+.login-signup-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-signup-container label {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.login-signup-container input {
+    
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #3498db;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.login-signup-container input:focus {
+    outline: none;
+    /* Disable the default focus outline */
+    border-color: #3498db;
+    /* Set the desired border color on focus */
+}
+
+
+.password-input-container {
+    margin: 5px 0px 10px 0px;
+    position: relative;
+    display: inline-block;
+    border: 1px solid;
+    border: 1px solid #3498db;
+    border-radius: 6px;
+    height: 45px;
+}
+
+.password-input-container input{
+    border: 0;
+}
+
+.password-input-container i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #3498db;
+}
+
+
+.login-signup-container button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.login-signup-container button:hover {
+    background-color: #45a049;
+}
+
+.login-signup-container p {
+    text-align: center;
+    margin-top: 16px;
+    color: #333;
+}
+
+.login-signup-container button[type="button"] {
+    background: none;
+    border: none;
+    color: #3498db;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.login-signup-container button[type="button"]:hover {
+    color: #45a049;
+}
+
+.error-message {
+    color: #ff4d4f;
+    /* Red color for error messages */
+    display: flex;
+    align-items: center;
+}
+
+.error-message i {
+    margin-right: 5px;
+    color: red;
+}
+

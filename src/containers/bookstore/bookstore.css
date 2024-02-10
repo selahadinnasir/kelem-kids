@@ -1,0 +1,243 @@
+/* bookstore.css */
+
+/* Container styles */
+.bookstore-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #30ff93; /* Gradient background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    gap: 100px;
+    
+    /* blue--010084 */
+    /* gold--ffd800 */
+  }
+  
+  
+  /* Hero section styles */
+  .hero {
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+    background-image: url('../../assets/books-hero.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+
+  }
+  
+  /* Title animation */
+  .bookstore-title h1 {
+    font-weight: bold;
+    text-align: center;
+    margin: 30px;
+    animation: colorChange 10s infinite;
+  }
+  
+  .books-activity{
+    display: flex;
+  }
+  /* Rest of your existing CSS styles */
+  /* ... */
+  
+
+
+/* bookstore.css */
+
+@keyframes colorChange {
+
+    0%,
+    100% {
+        color: #3498db;
+        filter: brightness(1);
+        transform: translateY(0);
+        /* Initial and final position */
+    }
+
+    25% {
+        color: #e74c3c;
+        filter: brightness(1.2);
+        transform: translateY(-5px);
+        /* Move up */
+    }
+
+    50% {
+        color: #2ecc71;
+        filter: brightness(1);
+        transform: translateY(5px);
+        /* Move down */
+    }
+
+    75% {
+        color: #f39c12;
+        filter: brightness(1.2);
+        transform: translateY(-5px);
+        /* Move up */
+    }
+}
+
+.bookstore-title h1 {
+    font-weight: bold;
+    text-align: center;
+    margin: 30px;
+    animation: colorChange 10s infinite;
+    /* Adjust the duration as needed */
+}
+
+
+.search-bar label {
+    font-size: 16px;
+    color: #333;
+    margin-right: 10px;
+}
+
+
+
+
+.category-selector {
+    margin-bottom: 20px;
+}
+
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.category-button {
+    padding: 8px 16px;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+    background-color: #ff69b4;
+    /* Hot Pink color, you can choose any vibrant color */
+    color: #fff;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    /* Playful font */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-button:hover {
+    background-color: #ff1493;
+    /* Deep Pink color on hover */
+    transform: scale(1.1);
+    color: #fff;
+    /* Change text color on hover */
+}
+
+.category-button.active {
+    background-color: #ff6347;
+    /* Tomato color for active button */
+    color: #fff;
+    /* Change text color for active button */
+}
+
+.search-bar {
+    align-items: center;
+}
+
+.search-bar-container {
+    margin-top: 10px;
+}
+
+
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #888;
+    transition: color 0.3s;
+}
+
+.search-icon:hover {
+    color: #555;
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+    /* Add scroll if needed */
+}
+
+.book-card {
+    width: 250px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.book-card:hover {
+    transform: scale(1.1);
+}
+
+.book-cover {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.book-details {
+    padding: 15px;
+    text-align: left;
+    height: 100px;
+}
+
+.book-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.book-author {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.book-link {
+    display: block;
+    padding: 12px;
+    background-color: #ffcc00;
+    /* Vibrant yellow background */
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.book-link:hover {
+    background-color: #ffc400;
+    /* Slightly darker yellow on hover */
+}
+
