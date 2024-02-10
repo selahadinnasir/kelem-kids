@@ -1,5 +1,5 @@
 {
-  "homepage": "https://selahadinasir.github.io/kelem-kids/",
+  "homepage": "https://selahadinnasir.github.io/kelem-kids/",
   "name": "keleme-kids-website",
   "version": "0.1.0",
   "private": true,
@@ -67,8 +67,6 @@
     "@babel/preset-flow": "^7.23.3",
     "@babel/preset-react": "^7.23.3",
     "@babel/preset-typescript": "^7.23.3",
-    "gh-pages": "^6.1.0"
+    "gh-pages": "^6.1.1"
   }
 }
-
-
